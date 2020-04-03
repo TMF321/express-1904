@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
 
     avatar: {
         type: String,
-        default:"http://106.52.211.131:7778/assets/img/avatar.png"
+        default:`${process.env.BASEURL}/assets/img/avatar.png`
     }
 })
 
